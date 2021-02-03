@@ -57,8 +57,8 @@ jobs:
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
-          key: ${{ secrets.SSH_KEY }}
-          passphrase: ${{ secrets.PASSPHRASE }} # если ваш ssh-ключ защищен фразой-паролем
+          key: ${{ secrets.SSH_KEY_PR }}
+          #passphrase: ${{ secrets.PASSPHRASE }} # если ваш ssh-ключ защищен фразой-паролем
           #source: "docker-compose.yaml, nginx/default.conf"
           #target: "~/app/"
           script: |
