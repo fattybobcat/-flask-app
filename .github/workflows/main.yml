@@ -58,6 +58,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH_KEY_PR }}
+          passphrase: ${{ secrets.PASSPHRASE }}
           script: |
             sudo docker pull fattybobcat/app-flake-hello
             sudo docker stop $(sudo docker ps -a -q)
