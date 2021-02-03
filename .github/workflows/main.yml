@@ -60,7 +60,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }} # если ваш ssh-ключ защищен фразой-паролем
           #source: "docker-compose.yaml, nginx/default.conf"
-          target: "~/app/"
+          #target: "~/app/"
           script: |
             sudo docker pull fattybobcat/app-flake-hello
             sudo docker stop $(sudo docker ps -a -q)
