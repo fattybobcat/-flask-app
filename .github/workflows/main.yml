@@ -63,3 +63,4 @@ jobs:
             sudo docker pull fattybobcat/app-flake-hello
             sudo docker stop $(sudo docker ps -a -q)
             sudo docker run --rm -d -p 5000:5000 fattybobcat/app-flake-hello
+
